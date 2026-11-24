@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", ui-serif, Georgia, serif;
+}
+
+@layer base {
+  html {
+    font-family: var(--font-sans);
+    background-color: #092B22;
+    color: #E4EEE7;
+    scroll-padding-top: 84px;
+  }
+
+  /* Ensure visible, accessible keyboard focus outlines */
+  :focus-visible {
+    outline: 2px solid #E3C58B;
+    outline-offset: 2px;
+  }
+
+  /* Improve dark-surface date picker icon visibility */
+  input[type="date"]::-webkit-calendar-picker-indicator {
+    filter: invert(0.82) sepia(0.32) saturate(1.4) hue-rotate(8deg);
+    cursor: pointer;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

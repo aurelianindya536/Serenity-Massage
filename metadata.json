@@ -1,0 +1,6 @@
+{
+  "name": "Serenity Massage",
+  "description": "Pijat tradisional dan relaksasi panggilan profesional ke hotel, apartemen, homestay, dan rumah dengan pemesanan langsung melalui WhatsApp.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
